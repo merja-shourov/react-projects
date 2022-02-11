@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Database</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Student Form</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="student_form">
+
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" placeholder="Student Name">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input name="roll" type="text" class="form-control" placeholder="Student Roll">
+                            </div>  
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" placeholder="Student Class">
+                            </div>  
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" placeholder="Student Photo">
+                            </div>  
+                            <div class="form-group mb-3">
+                        
+                                <input type="radio" name="gender" value="Male" id="Male"> <label for="Male">Male</label>
+                                <input type="radio" name="gender" value="Female" id="Female"> <label for="Female">Female</label>
+                            </div>
+
+                            <h5>Marks</h5>
+                            <hr>
+                           <div class="row">
+                                <div class="form-group mb-3 col-md-4">
+                                    <input type="text" class="form-control" placeholder="Bangla">
+                                </div> 
+                                <div class="form-group mb-3 col-md-4">
+                                    <input type="text" class="form-control" placeholder="English">
+                                </div> 
+                                <div class="form-group mb-3 col-md-4">
+                                    <input type="text" class="form-control" placeholder="Math">
+                                </div> 
+                           </div>
+                          <div class="row">
+                                <div class="form-group mb-3 col-md-4">
+                                    <input type="text" class="form-control" placeholder="Science">
+                                </div> 
+                                <div class="form-group mb-3 col-md-4">
+                                    <input type="text" class="form-control" placeholder="Social Science">
+                                </div> 
+                                <div class="form-group mb-3 col-md-4">
+                                    <input type="text" class="form-control" placeholder="Religion">
+                                </div>       
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <input type="submit" class="form-control btn btn-success btn-block" value="Informatoin Submit">
+                        </div> 
+                            
+                        </form>
+                    </div>
+                    <div class="card-footer" id="validation_box">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="table">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Roll</th>
+                                <th>Class</th>
+                                <th>Gender</th>
+                                <th>GPA</th>
+                                <th>Grade</th>
+                                <th>Photo</th>
+                                <th>Action</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+
+                          
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./function.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
+
