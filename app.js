@@ -74,7 +74,7 @@ function studentResult(){
                 <td>A</td>
                 <td><img style="width:40px; height:40px; object-fit:cover;" src="${data.photo}" alt="photo"></td>
                 <td>
-                    <button class="btn btn-success btn-sm" >View</button>
+                    <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#result_page" >View </button>
                     <button onclick = removeData(${index}); class="btn btn-danger btn-sm" >Delete</button>
                 </td>
             </tr>
@@ -83,6 +83,13 @@ function studentResult(){
 
     table_body.innerHTML = output_data;
 };
+
+
+
+/**
+ * Remove Date Functon .. 
+ * @param {RemoveDate} id 
+ */
 
 function removeData(id){
 
