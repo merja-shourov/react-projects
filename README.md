@@ -1,3 +1,2 @@
-# result-sheet
+# React Projects
 
-It's a Student Result Sheet application with Local Stroge..
